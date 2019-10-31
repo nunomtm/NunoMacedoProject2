@@ -1,0 +1,68 @@
+// Header Styles Start Here 
+
+header {
+    background-image: url(../textilee-assets/header-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 95vh;
+}
+
+/* Hamburber menu for the mobile version */
+.mainNav i {
+    font-size: 2.5rem;
+    position: absolute;
+    visibility: hidden;
+    top: 6%;
+    right: 10%;
+}
+/* - */
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+    color: #1E1713;
+}
+
+.navContainer {
+    display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainNav li {
+    margin: 0 20px;
+}
+
+.mainNav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 29px;
+    letter-spacing: 1.4px;
+    color: #1A315C;
+}
+
+header img {
+    z-index: 1;
+}

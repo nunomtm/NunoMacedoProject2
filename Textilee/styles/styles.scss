@@ -1,0 +1,61 @@
+@import'partials/setup';
+@import'partials/global';
+@import 'partials/mixins';
+@import 'partials/header';
+
+// $primaryColor: steelblue;
+// $secondaryColor: firebrick;
+
+// body {
+//     background: $primaryColor;
+//     font-family: 'Courier New', Courier, monospace;
+//     color: #2a2a2a;
+//     @include mq-tablet {
+//         background: pink;
+//         font-size: 45px;
+//     }
+
+//     @include mq-mobile {
+//         background: peachpuff;
+//         font-size: 45px;
+//     }
+// }
+
+.learn {
+    background: #CCEDFB;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    img {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        box-shadow: -12px 12px 0 #0CADC0;
+        button {
+            background-color: #1A315C;
+        }
+    }
+}
+
+.techniques {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    max-width: 50%;
+    margin-left: 12.5%;
+}
+
+.gallery {
+    background-color: #1A315C;
+}
+
+.galleryContainer {
+    display: flex;
+    padding: 50px 0;
+    li {
+        flex-direction: row;
+        align-content: space-between;
+    } img {
+        max-width: 90%;
+    }
+}
+
