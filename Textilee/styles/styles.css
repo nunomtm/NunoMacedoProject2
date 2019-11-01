@@ -410,13 +410,9 @@ header img {
 .learn img {
   position: absolute;
   bottom: 20%;
-  right: 10%;
-  -webkit-box-shadow: -12px 12px 0 #0CADC0;
-          box-shadow: -12px 12px 0 #0CADC0;
-}
-
-.learn img button {
-  background-color: #1A315C;
+  right: 12.5%;
+  -webkit-box-shadow: -19px 19px 0 #0CADC0;
+          box-shadow: -19px 19px 0 #0CADC0;
 }
 
 .techniques {
@@ -426,27 +422,139 @@ header img {
   margin-left: 12.5%;
 }
 
+.techniques button {
+  background-color: #1A315C;
+}
+
 .gallery {
   background-color: #1A315C;
 }
 
-.galleryContainer {
+.gallery .galleryContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
-.galleryContainer li {
+.gallery .galleryContainer li {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 30px;
 }
 
-.galleryContainer img {
-  max-width: 90%;
+.gallery .galleryContainer li:last-child {
+  margin-right: 0;
+}
+
+.posts {
+  background-color: #CCEDFB;
+}
+
+.posts .knowMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+
+.posts .knowMore i {
+  font-size: 30px;
+  color: #fff;
+  padding: 14px;
+  border: 1px solid #0CADC0;
+  border-radius: 50%;
+  background-color: #0CADC0;
+}
+
+.events,
+.blog,
+.community,
+.inTouch {
+  position: relative;
+}
+
+.events i,
+.blog i,
+.community i,
+.inTouch i {
+  position: absolute;
+  margin-top: 1%;
+}
+
+.eventsPost,
+.blogPost,
+.communityPost,
+.inTouchPost {
+  margin-left: 15%;
+}
+
+.discover {
+  background-color: #1A315C;
+  padding: 20px 0 30px 0;
+}
+
+.discover .discoverContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.discover .discoverContainer .title,
+.discover .discoverContainer p {
+  color: #fff;
+  margin-left: 45%;
+}
+
+.discoverContainer img {
+  position: absolute;
+  width: 40%;
+  top: -20%;
+  -webkit-box-shadow: 20px 20px 0 #0CADC0;
+          box-shadow: 20px 20px 0 #0CADC0;
+}
+
+.discoverContainer button {
+  margin-left: 45%;
+}
+
+.newLocations {
+  background-color: #1A315C;
+  padding: 20px 0 30px 0;
+}
+
+.newLocations .newLocationsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.newLocations .newLocationsContainer .title,
+.newLocations .newLocationsContainer p {
+  text-align: right;
+  color: #fff;
+  margin-right: 48%;
+}
+
+.discoverContainer button,
+.newLocationsContainer button {
+  background-color: #CCEDFB;
+  color: #1E1713;
+}
+
+.newLocationsContainer img {
+  position: absolute;
+  width: 40%;
+  bottom: -20%;
+  right: 0;
+  -webkit-box-shadow: -20px 20px 0 #0CADC0;
+          box-shadow: -20px 20px 0 #0CADC0;
 }
 /*# sourceMappingURL=styles.css.map */
