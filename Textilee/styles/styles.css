@@ -271,7 +271,16 @@ h2 {
   font-size: 4.3rem;
   line-height: 58px;
   letter-spacing: 2.7px;
-  color: #1A315C;
+  color: #1E1713;
+}
+
+h3 {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 3.3rem;
+  line-height: 58px;
+  letter-spacing: 2.7px;
+  margin: 10px 0 5px 0;
 }
 
 p {
@@ -287,6 +296,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  margin: 10px 0;
 }
 
 button {
@@ -332,14 +345,13 @@ header {
 }
 
 /* - */
-.logo {
+.mainNav .logo h2 {
   font-family: 'Pacifico', cursive;
   font-weight: normal;
   font-size: 3rem;
   text-align: center;
   line-height: 24px;
   letter-spacing: 1.7px;
-  color: #1E1713;
 }
 
 .navContainer {
@@ -398,32 +410,43 @@ header img {
   z-index: 1;
 }
 
+#main {
+  z-index: -1;
+}
+
 .learn {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  max-width: 55%;
+  margin-left: 12.5%;
   background: #CCEDFB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: -1;
-  position: relative;
 }
 
 .learn img {
   position: absolute;
-  bottom: 20%;
   right: 12.5%;
   -webkit-box-shadow: -19px 19px 0 #0CADC0;
           box-shadow: -19px 19px 0 #0CADC0;
 }
 
 .techniques {
-  padding-top: 15%;
-  padding-bottom: 5%;
-  max-width: 50%;
-  margin-left: 12.5%;
+  position: relative;
+}
+
+.techniques .title {
+  color: #1A315C;
+}
+
+.techniques p {
+  color: #1E1713;
 }
 
 .techniques button {
   background-color: #1A315C;
+  border: none;
 }
 
 .gallery {
@@ -479,6 +502,13 @@ header img {
   position: relative;
 }
 
+.events h2,
+.blog h2,
+.community h2,
+.inTouch h2 {
+  color: #1A315C;
+}
+
 .events i,
 .blog i,
 .community i,
@@ -512,7 +542,7 @@ header img {
   margin-left: 45%;
 }
 
-.discoverContainer img {
+.discover .discoverContainer img {
   position: absolute;
   width: 40%;
   top: -20%;
@@ -520,8 +550,11 @@ header img {
           box-shadow: 20px 20px 0 #0CADC0;
 }
 
-.discoverContainer button {
+.discover .discoverContainer button {
+  background-color: #CCEDFB;
+  color: #1E1713;
   margin-left: 45%;
+  border: none;
 }
 
 .newLocations {
@@ -543,18 +576,345 @@ header img {
   margin-right: 48%;
 }
 
-.discoverContainer button,
-.newLocationsContainer button {
+.newLocations .newLocationsContainer button {
   background-color: #CCEDFB;
   color: #1E1713;
+  border: none;
+  margin-left: 35.5%;
 }
 
-.newLocationsContainer img {
+.newLocations .newLocationsContainer img {
   position: absolute;
   width: 40%;
   bottom: -20%;
   right: 0;
   -webkit-box-shadow: -20px 20px 0 #0CADC0;
           box-shadow: -20px 20px 0 #0CADC0;
+}
+
+.search {
+  text-align: center;
+  padding: 40px;
+}
+
+.search h2 {
+  color: #1A315C;
+}
+
+.search button {
+  background-color: #1A315C;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.blogHeader {
+  background-image: url(../textilee-assets/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  min-height: 75vh;
+  position: relative;
+}
+
+.blogHeader img {
+  z-index: 1;
+  position: absolute;
+  width: 58.6%;
+  -webkit-box-shadow: 20px 20px 0 #0CADC0;
+          box-shadow: 20px 20px 0 #0CADC0;
+  bottom: -400px;
+  left: 0;
+}
+
+main {
+  background-color: #CCEDFB;
+  position: relative;
+}
+
+.newCollection {
+  background-color: #1A315C;
+  border-right: 10px solid #0CADC0;
+  border-bottom: 10px solid #0CADC0;
+  max-width: 60%;
+  padding-bottom: 8%;
+  position: relative;
+  z-index: 0;
+}
+
+.newCollection h2 {
+  color: #fff;
+  margin: 0;
+  padding-top: 70%;
+}
+
+.newCollection h4 {
+  color: #fff;
+}
+
+.newCollection p {
+  color: #fff;
+}
+
+.aside {
+  background-color: #1A315C;
+  width: 25%;
+  height: 38%;
+  padding-top: 26%;
+  border-left: 20px solid #1A315C;
+  position: absolute;
+  top: 8%;
+  right: 0;
+}
+
+.aside img {
+  top: -20px;
+  position: absolute;
+}
+
+.aside h3,
+.aside p,
+.aside li {
+  color: #fff;
+  margin-right: 5%;
+}
+
+.aside li {
+  list-style: initial;
+  margin-left: 6%;
+  font-size: 1.8rem;
+}
+
+.blogComments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+blockquote {
+  margin: 0 0 0 25px;
+  width: 50%;
+}
+
+blockquote h4 {
+  font-size: 2rem;
+  color: #1A315C;
+  margin: 0 0 5px 0;
+}
+
+blockquote p {
+  margin-top: 5px;
+  padding-bottom: 30px;
+}
+
+.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 60%;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  background-color: #CCEDFB;
+  border: none;
+  border-bottom: 2px solid #0CADC0;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  width: 47.5%;
+  margin-right: 30px;
+}
+
+.newsletter input[type="text"]::-webkit-input-placeholder,
+.newsletter input[type="email"]::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  color: #1A315C;
+}
+
+.newsletter input[type="text"]:-ms-input-placeholder,
+.newsletter input[type="email"]:-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #1A315C;
+}
+
+.newsletter input[type="text"]::-ms-input-placeholder,
+.newsletter input[type="email"]::-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #1A315C;
+}
+
+.newsletter input[type="text"]::placeholder,
+.newsletter input[type="email"]::placeholder {
+  font-size: 1.5rem;
+  color: #1A315C;
+}
+
+.newsletter input[type="email"] {
+  margin-right: 0;
+}
+
+.newsletter textarea {
+  color: #1A315C;
+  font-size: 1.5rem;
+  background-color: #CCEDFB;
+  border: 2px solid #0CADC0;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.newsletter button {
+  background-color: #1A315C;
+  border: none;
+  margin-bottom: 80px;
+}
+
+.contactHeader {
+  background-image: url(../textilee-assets/contact-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  min-height: 75vh;
+  position: relative;
+}
+
+main {
+  position: relative;
+}
+
+.getInTouch {
+  background-color: #CCEDFB;
+  height: 80vh;
+}
+
+.messageUs {
+  position: absolute;
+  top: -30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 60%;
+  border: 1px solid #1A315C;
+  -webkit-box-shadow: 20px 20px 0 #0CADC0;
+          box-shadow: 20px 20px 0 #0CADC0;
+  background-color: #1A315C;
+  width: 55%;
+  height: 90%;
+  margin-left: 5%;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.messageUs input[type="text"],
+.messageUs input[type="email"] {
+  background-color: #1A315C;
+  border: none;
+  border-bottom: 2px solid #0CADC0;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  width: 47.5%;
+  margin-right: 30px;
+}
+
+.messageUs input[type="text"]::-webkit-input-placeholder,
+.messageUs input[type="email"]::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.messageUs input[type="text"]:-ms-input-placeholder,
+.messageUs input[type="email"]:-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.messageUs input[type="text"]::-ms-input-placeholder,
+.messageUs input[type="email"]::-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.messageUs input[type="text"]::placeholder,
+.messageUs input[type="email"]::placeholder {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.messageUs input[type="email"] {
+  margin-right: 0;
+}
+
+.messageUs textarea {
+  color: #fff;
+  font-size: 1.5rem;
+  height: 300px;
+  background-color: #1A315C;
+  border: 2px solid #0CADC0;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.messageUs button {
+  background-color: #CCEDFB;
+  color: #1A315C;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.contacts {
+  position: absolute;
+  width: 20%;
+  margin-right: 12.5%;
+  top: 15%;
+  right: 0;
+}
+
+.contacts p {
+  margin: 5px 0;
+  color: #1A315C;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a i {
+  font-size: 2rem;
+  color: #1A315C;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.contactUs a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  color: #1A315C;
+  text-decoration: none;
+}
+
+.contactUs a:first-child {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #161515;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

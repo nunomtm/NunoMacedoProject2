@@ -1,0 +1,100 @@
+.contactHeader {
+    background-image: url(../textilee-assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    min-height: 75vh;
+    position: relative;
+}
+
+main {
+    position: relative;
+}
+
+.getInTouch {
+    background-color: #CCEDFB;
+    height: 80vh;
+}
+
+.messageUs {
+    position: absolute;
+    top: -30%;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    border: 1px solid #1A315C;
+    box-shadow: 20px 20px 0 #0CADC0;
+    background-color: #1A315C;
+    width: 55%;
+    height: 90%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    padding: 30px;
+    input[type="text"],
+    input[type="email"] {
+        background-color: #1A315C;
+        border: none;
+        border-bottom: 2px solid #0CADC0;
+        padding: 20px 30px;
+        margin-bottom: 40px;
+        width: 47.5%;
+        margin-right: 30px;
+        &::placeholder {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    }
+    input[type="email"] {
+        margin-right: 0;
+    }
+    textarea {
+        color: #fff;
+        font-size: 1.5rem;
+        height: 300px;
+        background-color: #1A315C;
+        border: 2px solid #0CADC0;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    button {
+        background-color: #CCEDFB;
+        color: #1A315C;
+        border: none;
+        margin-bottom: 40px;
+    }
+}
+
+.contacts {
+    position: absolute;
+    width: 20%;
+    margin-right: 12.5%;
+    top: 15%;
+    right: 0;
+    p {
+        margin: 5px 0;
+        color: #1A315C;
+    }
+}
+
+.social {
+    a {
+        text-decoration: none;
+        i {
+            font-size: 2rem;
+            color: #1A315C;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.contactUs a {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #1A315C;
+    text-decoration: none;
+    &:first-child {
+        margin-bottom: 30px;
+    }
+}

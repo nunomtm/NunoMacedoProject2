@@ -35,7 +35,16 @@ h2 {
     font-size: 4.3rem;
     line-height: 58px;
     letter-spacing: 2.7px;
-    color: #1A315C;
+    color: #1E1713;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 3.3rem;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+    margin: 10px 0 5px 0;
 }
 
 p {
@@ -51,6 +60,10 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+li {
+    margin: 10px 0;
 }
 
 button {
