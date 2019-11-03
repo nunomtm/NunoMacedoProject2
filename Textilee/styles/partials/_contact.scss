@@ -5,7 +5,31 @@
     background-position: 100% 70%;
     min-height: 75vh;
     position: relative;
+    .logo {
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+    .headline {
+        margin: 40px auto;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
 }
+
+/* Hamburber menu for the mobile version */
+.navContainer {
+    position: relative;
+    i {
+        font-size: 3.5rem;
+        position: absolute;
+        visibility: hidden;
+        right: 0%;
+        top: 22%;
+    }
+}
+/* - */
 
 main {
     position: relative;
@@ -21,7 +45,6 @@ main {
     top: -30%;
     display: flex;
     flex-direction: column;
-    max-width: 60%;
     border: 1px solid $primeryFontColor;
     box-shadow: 20px 20px 0 #0CADC0;
     background-color: $primeryFontColor;

@@ -5,15 +5,39 @@
     background-position: 100% 70%;
     min-height: 75vh;
     position: relative;
+    .logo {
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+    .headline {
+        margin: 40px auto;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
     img {
         z-index: 1;
         position: absolute;
         width: 58.6%;
         box-shadow: 20px 20px 0 $secondaryBackgroundColor;
-        bottom: -400px;
+        top: 70%;
         left: 0;
     }
 }
+
+/* Hamburber menu for the mobile version */
+.navContainer {
+    position: relative;
+    i {
+        font-size: 3.5rem;
+        position: absolute;
+        visibility: hidden;
+        right: 0%;
+        top: 22%;
+    }
+}
+/* - */
 
 main {
     background-color: $baseBackgroundColor;
@@ -144,7 +168,7 @@ blockquote {
 }
 
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-    box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.9);
     -webkit-transform: scale(1);
     transform: scale(1);
 }

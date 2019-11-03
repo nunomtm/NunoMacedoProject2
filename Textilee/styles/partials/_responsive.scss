@@ -1,0 +1,153 @@
+// Blog Page Responsive Starts Here
+@include mqDesktop {
+    .blogHeader img {
+        width: 58%;
+    }
+    .aside {
+        width: 30%;
+        height: 29%;
+        padding-top: 35%;
+    }
+    .newsletter input[type="text"],
+    .newsletter input[type="email"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .blogHeader img {
+        width: 82.8%;
+    }
+    .newCollection {
+        padding-top: 40%;
+        max-width: 85%;
+    }
+    .aside {
+        display: none;
+    }
+    blockquote {
+        width: 75%;
+    }
+    .newsletter {
+        max-width: 80%;
+    }
+    .newsletter input[type="text"],
+    .newsletter input[type="email"],
+    textarea {
+        width: 100%;
+    }
+}
+
+@include mqTablet { 
+    .blogHeader img {
+        width: 82.4%;
+    }
+}
+
+@include mqMobile {
+    .blogHeader img {
+        width: 80.8%;
+    }
+}
+
+@include mqMobileSE {
+    .blogHeader img {
+        width: 94%;
+    }
+    .newCollection {
+        padding-top: 40%;
+        max-width: 100%;
+        h3 {
+            font-size: 2.4rem;
+        }
+        p.postDate {
+            font-size: 1.3rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+    .blogComments {
+        flex-direction: column;
+        blockquote {
+            width: 95%;
+            margin-left: 0;
+            p.postDate {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .newsletter {
+        max-width: 100%;
+    }
+    .button {
+        font-size: 2rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+    }
+}
+// Blog Page Responsive Starts Here
+
+
+// Contact Page Responsive Starts Here
+@media (max-width: 1275px) {
+    .messageUs {
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+        }
+    } 
+}
+
+@include mqTablet {
+    .contactHeader {
+        min-height: 60vh;
+    }
+    .navContainer i {
+        display: block;
+        color: $primeryFontColor;
+        visibility: visible;
+    } 
+    .mainNav ul {
+        display: none;
+    }
+    .messageUs {
+        height: 75%;
+        width: 80%;
+    }
+    .contacts {
+        top: 55%;
+        right: 10%;
+        width: 60%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .headline {
+        font-size: 4.5rem;
+    }
+    .contacts {
+        top: 50%;
+        right: 5%;
+        width: 70%;
+    }
+}
+
+@include mqMobileSE {
+    main {
+        min-height: 80vh;
+    }
+    .contacts {
+        font-size: 1.6rem;
+    }
+    footer p {
+    font-size: 1.4rem;
+    }
+}
+
+// Contact Page Responsive Ends Here

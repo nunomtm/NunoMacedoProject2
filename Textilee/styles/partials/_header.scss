@@ -1,68 +1,48 @@
 // Header Styles Start Here 
 header {
-    background-image: url(../textilee-assets/header-home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 95vh;
+  background-image: url(../textilee-assets/header-home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 95vh;
 }
-
-/* Hamburber menu for the mobile version */
-.mainNav i {
-    font-size: 2.5rem;
-    position: absolute;
-    visibility: hidden;
-    top: 6%;
-    right: 10%;
-}
-/* - */
 
 .logo {
-    font-family: $baseFont;
-    font-weight: normal;
-    font-size: 3rem;
-    text-align: center;
-    line-height: 24px;
-    letter-spacing: 1.7px;
-
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
 .navContainer {
-    display: flex;
-	flex-direction: column;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .mainNav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.mainNav ul {
+  display: flex;
+  justify-content: space-between;
+  ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.mainNav li {
-    margin: 0 20px;
-}
-
-.mainNav li:last-child {
-    margin-right: 0;
+    li {
+      margin: 0 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 nav a {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-    text-decoration: none;
-    line-height: 29px;
-    letter-spacing: 1.4px;
-    color: $primeryFontColor;
+  font-family: $secondaryFont;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  color: $primeryFontColor;
 }
 
 @-webkit-keyframes hvr-wobble-vertical {
@@ -139,15 +119,15 @@ nav a {
 }
 
 nav .current {
-    border-bottom: 2px solid $secondaryBackgroundColor;
+  border-bottom: 2px solid $secondaryBackgroundColor;
 }
 
 .headline {
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
 header img {
-    z-index: 1;
+  z-index: 1;
 }
