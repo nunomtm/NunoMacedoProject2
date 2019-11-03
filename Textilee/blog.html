@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fe0b8f1505.js" crossorigin="anonymous"></script>
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Textille</title>
 </head>
@@ -18,18 +19,18 @@
     <header class="blogHeader">
         <div class="wrapper navContainer">
             <nav class="mainNav">
-                <h2 class="logo">Textille</h2>
+                <h1 class="logo">Textille</h1>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#main">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="hvr-wobble-vertical" href="index.html">Home</a></li>
+                    <li><a class="hvr-wobble-vertical" href="#main">About</a></li>
+                    <li><a class="current hvr-wobble-vertical" href="blog.html">Blog</a></li>
+                    <li><a class="hvr-wobble-vertical" href="contact.html">Contact</a></li>
                 </ul>
                 <i class="fa fa-bars"></i>
             </nav>
         </div>
         <div class="wrapper">
-            <h1>Blog</h1>
+            <h2>Blog</h2>
         </div>
         <img src="./textilee-assets/blog-post-image.jpg" alt="">
     </header>
@@ -37,8 +38,8 @@
     <main>
         <section class="newCollection">
             <div class="wrapper">
-                <h2>Our new collection</h2>
-                <h4>Monday, October 5th. 2019 by Saron</h4>
+                <h3>Our new collection</h3>
+                <p class="postDate">Monday, October 5th. 2019 by Saron</p>
         
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cum maiores nemo! Aliquam quis officiis ab porro accusamus quaerat. Voluptatem animi hic doloribus? Exercitationem eveniet, corrupti nesciunt et repellat perferendis. Molestias accusantium voluptates voluptatibus accusamus quod.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde aperiam amet, expedita cumque nobis, laboriosam quas officiis delectus provident, tempore laborum quo vel. Enim dignissimos voluptatibus pariatur reiciendis perferendis fugiat! Assumenda harum quod maiores autem provident quo, quis sed voluptatum ea ullam labore, id velit alias voluptatibus?</p>
@@ -50,10 +51,10 @@
         <section class="aside">
             <img src="./textilee-assets/sidebar-image.jpg" alt="">
             <aside>
-                <h3>Our mission</h3>
+                <h6>Our mission</h6>
                 <p>Nam daibus nisl vitae elit frigilla rutrum. Aeneam sollicitudin, erat a elementum. Find ouu more</p>
             
-                <h3>Recent Posts</h3>
+                <h6>Recent Posts</h6>
                 <ul>
                     <li>Domect facilisis tortor ut</li>
                     <li>Augue lacinia at viverra</li>
@@ -64,14 +65,14 @@
         </section>
 
         <section class="comments wrapper">
-            <h2>Comments:</h2>
+            <h5>Comments:</h5>
             <div class="commentsContainer">
                 <div class="blogComments">
                     <div>
                         <img src="./textilee-assets/comment-1.jpg" alt="">
                     </div>
                     <blockquote>
-                        <h4>Tuesday December 9th, 2019 by Louise</h4>
+                        <p class="postDate">Tuesday December 9th, 2019 by Louise</p>
                         <p>Fusce vehicula dolor arcu. sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
                     </blockquote>
                 </div>
@@ -81,7 +82,7 @@
                         <img src="./textilee-assets/comment-2.jpg" alt="">
                     </div>
                     <blockquote>
-                        <h4>Wednesday December 10th, 2019 by JP</h4>
+                        <p class="postDate">Wednesday December 10th, 2019 by JP</p>
                         <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
                     </blockquote>
                 </div>
@@ -95,7 +96,7 @@
     
                 <textarea name="comment" rows="5" cols="35">Comment</textarea>
     
-                <button type="submit">post comment</button>
+                <button class="button hvr-grow-shadow" type="submit">post comment</button>
             </form>
         </section>
     </main>

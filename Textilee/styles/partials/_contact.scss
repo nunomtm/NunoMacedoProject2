@@ -12,7 +12,7 @@ main {
 }
 
 .getInTouch {
-    background-color: #CCEDFB;
+    background-color: $baseBackgroundColor;
     height: 80vh;
 }
 
@@ -22,9 +22,9 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 60%;
-    border: 1px solid #1A315C;
+    border: 1px solid $primeryFontColor;
     box-shadow: 20px 20px 0 #0CADC0;
-    background-color: #1A315C;
+    background-color: $primeryFontColor;
     width: 55%;
     height: 90%;
     margin-left: 5%;
@@ -32,7 +32,7 @@ main {
     padding: 30px;
     input[type="text"],
     input[type="email"] {
-        background-color: #1A315C;
+        background-color: $primeryFontColor;
         border: none;
         border-bottom: 2px solid #0CADC0;
         padding: 20px 30px;
@@ -51,17 +51,58 @@ main {
         color: #fff;
         font-size: 1.5rem;
         height: 300px;
-        background-color: #1A315C;
+        background-color: $primeryFontColor;
         border: 2px solid #0CADC0;
         padding: 20px;
         margin-bottom: 40px;
     }
-    button {
-        background-color: #CCEDFB;
-        color: #1A315C;
+    .button {
+        background-color: $baseBackgroundColor;
+        color: $primeryFontColor;
         border: none;
         margin-bottom: 40px;
     }
+}
+
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $secondaryBackgroundColor;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: $tertiaryFontColor;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .contacts {
@@ -72,18 +113,24 @@ main {
     right: 0;
     p {
         margin: 5px 0;
-        color: #1A315C;
+        color: $primeryFontColor;
     }
 }
 
 .social {
     a {
         text-decoration: none;
+        transition: 0.4s;
         i {
             font-size: 2rem;
-            color: #1A315C;
+            color: $primeryFontColor;
             padding-right: 20px;
             padding-bottom: 20px;
+            transition: 0.25s ease;
+            &:hover {
+                color: $secondaryBackgroundColor;
+                transform: scale(1.3);
+            }
         }
     }
 }
@@ -92,9 +139,13 @@ main {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
-    color: #1A315C;
+    color: $tertiaryFontColor;
     text-decoration: none;
     &:first-child {
         margin-bottom: 30px;
     }
+}
+
+.contactUs p {
+    color: $tertiaryFontColor;
 }

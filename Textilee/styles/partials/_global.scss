@@ -1,11 +1,11 @@
-// Testille Project starts Here
+// Testille Project Global Styles Starts Here
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: 'Pacifico', cursive;
-    font-family: 'Lato', sans-serif;
+    font-family: $baseFont;
+    font-family: $secondaryFont;
     margin: 0 auto;
 }
 
@@ -21,39 +21,64 @@ img {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: $baseFont;
     font-weight: normal;
-    font-size: 5.8rem;
-    line-height: 68px;
-    color: #1A315C;
-    max-width: 55%;
+    font-size: 3rem;
+    line-height: 24px;
+    letter-spacing: 1.7px;
+    color: $tertiaryFontColor;
 }
 
 h2 {
-    font-family: 'Pacifico', cursive;
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 5.8rem;
+    line-height: 68px;
+    color: $primeryFontColor;
+    max-width: 55%;
+}
+
+h3 {
+    font-family: $baseFont;
     font-weight: normal;
     font-size: 4.3rem;
     line-height: 58px;
     letter-spacing: 2.7px;
-    color: #1E1713;
-}
-
-h3 {
-    font-family: 'Pacifico', cursive;
-    font-weight: normal;
-    font-size: 3.3rem;
-    line-height: 58px;
-    letter-spacing: 2.7px;
+    color: $primeryFontColor;
     margin: 10px 0 5px 0;
 }
 
+h4 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+    color: $secondaryFontColor;
+}
+
+h5 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 4rem;
+    letter-spacing: 4.3px;
+    color: $tertiaryFontColor;
+}
+
+h6 {
+    font-family: $baseFont;
+    font-weight: normal;
+    font-size: 3.5rem;
+    letter-spacing: 2.9px;
+    color: $secondaryFontColor;
+}
+
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: $secondaryFont;
     font-weight: normal;
     font-size: 2rem;
     line-height: 28px;
     letter-spacing: 2px;
-    /* color: #fff; */
 }
 
 ul {
@@ -66,15 +91,16 @@ li {
     margin: 10px 0;
 }
 
-button {
-    font-family: 'Pacifico', cursive;
+.button {
+    font-family: $baseFont;
     font-weight: normal;
     font-size: 2.7rem;
     text-align: center;
+    text-decoration: none;
     line-height: 32px;
     letter-spacing: 1.4px;
-    padding: 10px 25px;
-    color: #fff;
+    padding: 5px 30px;
+    color: $secondaryFontColor;
 }
 
 /* Skip-line for accessibility */
@@ -83,8 +109,8 @@ button {
   left: -1000px;
   top: 5px;
   z-index: 999;
-  background: white;
-  color: black;
+  background: $secondaryFontColor;
+  color: $tertiaryFontColor;
 }
 
 .skip-link:focus {
