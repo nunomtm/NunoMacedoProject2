@@ -1,3 +1,134 @@
+// Header Page Responsive Starts Here
+@include mqTablet {
+    .navContainer i {
+        display: block;
+        color: $primeryFontColor;
+        visibility: visible;
+    } 
+    .mainNav ul li {
+        display: none;
+    }
+}
+// Header Page Responsive Ends Here
+
+
+// Main Page Responsive Starts Here
+@media (max-width: 1220px) {
+    .techniques {
+        max-width: 75%;
+    }
+}
+
+@include mqDesktop {
+    .learn {
+        max-width: 100%;
+        img {
+            right: 35%;
+            top: 180px;
+        }
+    }
+    .techniques {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        .title {
+            text-align: center;
+            margin-top: 410px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .events,
+    .blog,
+    .community,
+    .inTouch {
+        h3 {
+            font-size: 3.4rem;
+        }
+    }
+    .eventsPost,
+    .blogPost,
+    .communityPost,
+    .inTouchPost {
+        margin-left: 18%;
+    }
+    .discover {
+        .discoverContainer {
+            .title {
+                margin: 0;
+                padding-top: 50%;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                text-align: center;
+            }
+            img {
+                width: 60%;
+                top: -8%;
+            }
+            .button {
+                margin-left: 38%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .title {
+                margin: 0;
+                padding-top: 60%;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                text-align: center;
+            }
+            .button {
+                margin-left: 35.5%;
+            }  
+            img {
+                width: 60%;
+                top: 4%;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    // .learn img {
+    //     top: 4%;
+    // }   
+    .techniques {
+        .title {
+            margin-top: 430px;
+        }
+    }
+    .posts {
+        .knowMore {
+            flex-direction: column;
+        }
+    }
+}
+
+@include mqTablet {
+    .learn img {
+        right: 30%;
+    }
+    .gallery {
+        .galleryContainer {
+            flex-direction: column;
+            align-items: center;
+            li {
+                margin-right: 0;
+            }
+        }
+    }
+}
+// Main Page Responsive Endss Here
+
+
 // Blog Page Responsive Starts Here
 @include mqDesktop {
     .blogHeader img {
@@ -90,7 +221,7 @@
         font-size: 1.4rem;
     }
 }
-// Blog Page Responsive Starts Here
+// Blog Page Responsive Ends Here
 
 
 // Contact Page Responsive Starts Here

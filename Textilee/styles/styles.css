@@ -361,13 +361,8 @@ header {
   max-height: 95vh;
 }
 
-.logo {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+header img {
+  z-index: 1;
 }
 
 .navContainer {
@@ -380,7 +375,7 @@ header {
           flex-direction: column;
 }
 
-.mainNav {
+.navContainer .mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,7 +384,16 @@ header {
           justify-content: space-between;
 }
 
-.mainNav ul {
+.navContainer .mainNav .logo {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.navContainer .mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,15 +406,15 @@ header {
           align-items: center;
 }
 
-.mainNav ul li {
+.navContainer .mainNav ul li {
   margin: 0 20px;
 }
 
-.mainNav ul li:last-child {
+.navContainer .mainNav ul li:last-child {
   margin-right: 0;
 }
 
-nav a {
+.navContainer .mainNav ul li a {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 2rem;
@@ -422,6 +426,33 @@ nav a {
   color: #1A315C;
 }
 
+.navContainer .mainNav ul .current {
+  border-bottom: 3px solid #0CADC0;
+}
+
+.navContainer .headline {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+/* Hamburber menu for the mobile version */
+.navContainer {
+  position: relative;
+}
+
+.navContainer i {
+  font-size: 3.5rem;
+  position: absolute;
+  visibility: hidden;
+  right: 0%;
+  top: 22%;
+}
+
+/* - */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {
     -webkit-transform: translateY(8px);
@@ -496,32 +527,15 @@ nav a {
   animation-iteration-count: 1;
 }
 
-nav .current {
-  border-bottom: 2px solid #0CADC0;
-}
-
-.headline {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-header img {
-  z-index: 1;
-}
-
 #main {
   z-index: -1;
 }
 
 .learn {
-  padding-top: 15%;
-  padding-bottom: 5%;
   max-width: 55%;
   margin-left: 12.5%;
+  padding-top: 15%;
+  padding-bottom: 5%;
   background: #CCEDFB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,6 +618,11 @@ header img {
   background-color: #0CADC0;
 }
 
+.posts .knowMore i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .events,
 .blog,
 .community,
@@ -611,10 +630,10 @@ header img {
   position: relative;
 }
 
-.events h2,
-.blog h2,
-.community h2,
-.inTouch h2 {
+.events h3,
+.blog h3,
+.community h3,
+.inTouch h3 {
   color: #1A315C;
 }
 
@@ -1193,6 +1212,125 @@ main {
 
 .contactUs p {
   color: #1E1713;
+}
+
+@media (max-width: 768px) {
+  .navContainer i {
+    display: block;
+    color: #1A315C;
+    visibility: visible;
+  }
+  .mainNav ul li {
+    display: none;
+  }
+}
+
+@media (max-width: 1220px) {
+  .techniques {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .learn {
+    max-width: 100%;
+  }
+  .learn img {
+    right: 35%;
+    top: 180px;
+  }
+  .techniques {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .techniques .title {
+    text-align: center;
+    margin-top: 410px;
+  }
+  .techniques p {
+    text-align: center;
+  }
+  .events h3,
+  .blog h3,
+  .community h3,
+  .inTouch h3 {
+    font-size: 3.4rem;
+  }
+  .eventsPost,
+  .blogPost,
+  .communityPost,
+  .inTouchPost {
+    margin-left: 18%;
+  }
+  .discover .discoverContainer .title {
+    margin: 0;
+    padding-top: 50%;
+    text-align: center;
+  }
+  .discover .discoverContainer p {
+    margin: 0;
+    text-align: center;
+  }
+  .discover .discoverContainer img {
+    width: 60%;
+    top: -8%;
+  }
+  .discover .discoverContainer .button {
+    margin-left: 38%;
+  }
+  .newLocations .newLocationsContainer .title {
+    margin: 0;
+    padding-top: 60%;
+    text-align: center;
+  }
+  .newLocations .newLocationsContainer p {
+    margin: 0;
+    text-align: center;
+  }
+  .newLocations .newLocationsContainer .button {
+    margin-left: 35.5%;
+  }
+  .newLocations .newLocationsContainer img {
+    width: 60%;
+    top: 4%;
+    right: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .techniques .title {
+    margin-top: 430px;
+  }
+  .posts .knowMore {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .learn img {
+    right: 30%;
+  }
+  .gallery .galleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery .galleryContainer li {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1023px) {
