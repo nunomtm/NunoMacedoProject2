@@ -13,6 +13,9 @@
         }
     }
     // Mobile menu
+    .mobileNav {
+        display: block;
+    }
     ul.nav {
         background: $primeryFontColor;
         position: fixed;
