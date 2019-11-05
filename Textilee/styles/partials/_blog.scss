@@ -129,7 +129,7 @@ blockquote {
         padding: 15px 30px;
         &::placeholder {
             font-size: 1.6rem;
-            // Color not applying 
+            opacity: 1;
             color: $primeryFontColor;
         }
     }

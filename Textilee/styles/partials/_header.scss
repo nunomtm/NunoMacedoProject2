@@ -2,10 +2,8 @@ header {
   background-image: url(../textilee-assets/header-home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 95vh;
-  img {
-    z-index: 1;
-  }
+  // background-position: 20% 100%;
+  min-height: 95vh;
 }
 
 .navContainer {

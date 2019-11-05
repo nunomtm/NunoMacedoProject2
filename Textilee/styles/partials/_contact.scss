@@ -19,16 +19,16 @@
 }
 
 /* Hamburber menu for the mobile version */
-.navContainer {
-    position: relative;
-    i {
-        font-size: 3.5rem;
-        position: absolute;
-        visibility: hidden;
-        right: 0%;
-        top: 22%;
-    }
-}
+// .navContainer {
+//     position: relative;
+//     i {
+//         font-size: 3.5rem;
+//         position: absolute;
+//         visibility: hidden;
+//         right: 0%;
+//         top: 22%;
+//     }
+// }
 /* - */
 
 main {
@@ -63,6 +63,7 @@ main {
         width: 47.5%;
         margin-right: 30px;
         &::placeholder {
+            opacity: 1;
             font-size: 1.5rem;
             color: #fff;
         }

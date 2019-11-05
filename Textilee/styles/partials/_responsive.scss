@@ -1,12 +1,31 @@
 // Header Page Responsive Starts Here
 @include mqTablet {
-    .navContainer i {
-        display: block;
-        color: $primeryFontColor;
-        visibility: visible;
-    } 
-    .mainNav ul li {
-        display: none;
+    header {
+    background-position: 45% 100%;
+    min-height: 75vh;
+    }
+    .headline {
+        font-size: 4.8rem;
+    }
+    .navContainer {
+        i {
+            display: block;
+            color: $primeryFontColor;
+            visibility: visible;
+        } 
+        .mainNav ul li {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background-position: 50% 100%;
+        min-height: 55vh;
+    }
+    .headline {
+        font-size: 3.2rem;
     }
 }
 // Header Page Responsive Ends Here
@@ -28,7 +47,7 @@
         }
     }
     .techniques {
-        max-width: 100%;
+        min-width: 100%;
         display: flex;
         flex-direction: column;
         .title {
@@ -51,7 +70,7 @@
     .blogPost,
     .communityPost,
     .inTouchPost {
-        margin-left: 18%;
+        margin-left: 20%;
     }
     .discover {
         .discoverContainer {
@@ -96,10 +115,7 @@
     }
 }
 
-@media (max-width: 960px) {
-    // .learn img {
-    //     top: 4%;
-    // }   
+@media (max-width: 960px) {  
     .techniques {
         .title {
             margin-top: 430px;
@@ -108,13 +124,30 @@
     .posts {
         .knowMore {
             flex-direction: column;
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -10%;
+            }
         }
     }
 }
 
 @include mqTablet {
-    .learn img {
-        right: 30%;
+    .learn {
+        margin-left: 10%;
+        .scissor {
+        width: 70%;
+        top: -290px;
+        }
+        figure img {
+            left: 28%;
+        }
+        .button {
+            width: 45%;
+            margin-left: 28%;
+        }
     }
     .gallery {
         .galleryContainer {
@@ -125,7 +158,159 @@
             }
         }
     }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -12%;
+            }
+        }
+    }
+    .discover {
+        .discoverContainer {
+            .button {
+                margin-left: 35%;
+            }
+        }
+    }
 }
+
+@media (max-width: 670px) {
+    .learn {
+        .scissor {
+        top: -245px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .learn {
+        .scissor {
+            width: 70%;
+            top: -190px;
+        }
+        .title {
+            width: 100%;
+            font-size: 3.2rem;
+        }
+        figure img {
+            top: 2%;
+            left: 20%;
+        }
+        .button {
+            width: 60%;
+            margin-left: 15%;
+        }
+    }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -18%;
+                margin-left: 22%;
+            }
+        }
+    }
+    .discover {
+        .discoverContainer {
+            .button {
+                margin-left: 25%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .button {
+                margin-left: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .headline {
+        font-size: 2.8rem;
+    }
+    .learn {
+        .scissor {
+            top: -170px;
+        }
+        .button {
+            width: 70%;
+            margin-left: 10%;
+        }
+    }
+    .posts {
+        .knowMore {
+            .eventsPost,
+            .blogPost,
+            .communityPost,
+            .inTouchPost {
+                margin-top: -22%;
+                margin-left: 25%;
+            }
+        }
+    }
+    .discover {
+        .discoverContainer {
+            .title {
+                font-size: 3rem;
+                padding-top: 70%;
+            }
+            img {
+                width: 100%;
+                top: -8;
+            }
+            .button {
+                margin-left: 20%;
+            }
+        }
+    }
+    .newLocations {
+        .newLocationsContainer {
+            .title {
+                font-size: 3rem;
+                padding-top: 90%;
+            }
+            img {
+                width: 100%;
+                top: 0;
+            }
+            .button {
+                margin-left: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .headline {
+        font-size: 3rem;
+    }
+    .learn {
+        .scissor {
+            top: -130px;
+        }
+        .button {
+            width: 76%;
+            margin-left: 9%;
+        }
+    }
+    .search {
+        .button {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include mqMobileSE {
+
+}
+
 // Main Page Responsive Endss Here
 
 
@@ -238,11 +423,113 @@
     .contactHeader {
         min-height: 60vh;
     }
-    .navContainer i {
+    // .navContainer i {
+    //     display: block;
+    //     color: $primeryFontColor;
+    //     visibility: visible;
+    // }
+
+    // 
+    .checkbox-container {
         display: block;
-        color: $primeryFontColor;
-        visibility: visible;
-    } 
+        position: relative;
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 8px;
+        margin-bottom: -3px;
+        z-index: 1;
+    }
+
+    .menu-content {
+        display: flex;
+        background: rgba(39, 125, 236, 0.9);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $secondaryFontColor;
+        float: right;
+        margin-top: -56px;
+    }
+
+    .menu-content ul {
+        display: block;
+        margin: 0;
+        margin-top: 10px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease 0.7s, width 0.7s ease;
+    }
+
+    .menu-content ul li {
+        list-style: none;
+        padding: 0.6em 0.5em;
+        transition: all 0.5s ease;
+        transition: color 0.5s, background 0.5s;
+    }
+
+    .checkbox-trigger {
+        opacity: 1;
+        position: absolute;
+        margin-top: -65px;
+        width: 50px;
+        height: 50px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .hamburger-menu, .hamburger-menu::before, .hamburger-menu::after {
+        display: block;
+        position: absolute;
+        background: $secondaryFontColor;
+        width: 40px;
+        height: 4px;
+        margin: 1.3em 3em;
+        transition: background 0.3s;
+    }
+
+    .hamburger-menu::before, .hamburger-menu::after {
+    content: '';
+        position: absolute;
+        margin: -0.7em 0 0;
+        transition: width 0.7s ease 0.3s; 
+        transform: 0.7s ease 0.3s;
+    }
+
+    .hamburger-menu::after { margin-top: 0.7em; }
+
+    .hamburger-menu {
+        position: relative;
+        display: block;
+        margin: 1.45em 0.35em;
+        transition: width 0.3s ease;
+    }
+
+    .checkbox-trigger:checked { right: 202px; }
+
+    .checkbox-trigger:checked + .menu-content .hamburger-menu {
+        width: 2em;
+        transition: width 0.7s ease 0.7s;
+    }
+
+    .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
+        width: 1.2em;
+        transform: rotate(-35deg);
+        margin-top: -0.4em;
+    }
+
+    .checkbox-trigger:checked + .menu-content .hamburger-menu::after {
+        width: 1.2em;
+        transform: rotate(35deg);
+        margin-top: 0.4em;
+    }
+
+    .checkbox-trigger:checked + .menu-content ul {
+        width: 200px;
+        height: 200px;
+        transition: width 0.7s ease 0.3s, height 0.3s ease;
+    }
+    // 
     .mainNav ul {
         display: none;
     }
