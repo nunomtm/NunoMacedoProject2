@@ -49,19 +49,9 @@ header {
     animation-iteration-count: 1;
   }
 }
-
-/* Hamburber menu for the mobile version */
-.navContainer {
-    position: relative;
-    i {
-        font-size: 3.5rem;
-        position: absolute;
-        visibility: hidden;
-        right: 0%;
-        top: 22%;
-    }
+.mobileNav {
+    display: none;
 }
-/* - */
 
 // Nav animation
 @-webkit-keyframes hvr-wobble-vertical {

@@ -439,20 +439,10 @@ header {
           animation-iteration-count: 1;
 }
 
-/* Hamburber menu for the mobile version */
-.navContainer {
-  position: relative;
+.mobileNav {
+  display: none;
 }
 
-.navContainer i {
-  font-size: 3.5rem;
-  position: absolute;
-  visibility: hidden;
-  right: 0%;
-  top: 22%;
-}
-
-/* - */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {
     -webkit-transform: translateY(8px);
@@ -1268,13 +1258,61 @@ main {
   .headline {
     font-size: 4.8rem;
   }
-  .navContainer i {
-    display: block;
-    color: #1A315C;
-    visibility: visible;
-  }
   .navContainer .mainNav ul li {
     display: none;
+  }
+  ul.nav {
+    background: #1A315C;
+    position: fixed;
+    z-index: 10;
+    width: 170px;
+    right: -170px;
+    top: 8%;
+    height: 30%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  ul.nav a {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  ul.nav a:hover,
+  ul.nav a:focus {
+    background: #3498db;
+  }
+  input[type="checkbox"]:checked + ul.nav {
+    right: 0;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  label[for="toggleMenu"] {
+    position: fixed;
+    top: 10px;
+    left: 80%;
+    color: black;
+    z-index: 10;
+  }
+  .mobileNav i {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  header {
+    background-position: 50% 100%;
+    min-height: 70vh;
+  }
+  .headline {
+    font-size: 3.8rem;
   }
 }
 
@@ -1284,7 +1322,19 @@ main {
     min-height: 55vh;
   }
   .headline {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .headline {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .headline {
+    font-size: 2.2rem;
   }
 }
 
@@ -1623,109 +1673,6 @@ main {
 @media (max-width: 768px) {
   .contactHeader {
     min-height: 60vh;
-  }
-  .checkbox-container {
-    display: block;
-    position: relative;
-    float: right;
-    width: 50px;
-    height: 50px;
-    margin-top: 8px;
-    margin-bottom: -3px;
-    z-index: 1;
-  }
-  .menu-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: rgba(39, 125, 236, 0.9);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
-    float: right;
-    margin-top: -56px;
-  }
-  .menu-content ul {
-    display: block;
-    margin: 0;
-    margin-top: 10px;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: height 0.3s ease 0.7s, width 0.7s ease;
-    transition: height 0.3s ease 0.7s, width 0.7s ease;
-  }
-  .menu-content ul li {
-    list-style: none;
-    padding: 0.6em 0.5em;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-transition: color 0.5s, background 0.5s;
-    transition: color 0.5s, background 0.5s;
-  }
-  .checkbox-trigger {
-    opacity: 1;
-    position: absolute;
-    margin-top: -65px;
-    width: 50px;
-    height: 50px;
-    right: 0;
-    z-index: 1;
-  }
-  .hamburger-menu, .hamburger-menu::before, .hamburger-menu::after {
-    display: block;
-    position: absolute;
-    background: #ffffff;
-    width: 40px;
-    height: 4px;
-    margin: 1.3em 3em;
-    -webkit-transition: background 0.3s;
-    transition: background 0.3s;
-  }
-  .hamburger-menu::before, .hamburger-menu::after {
-    content: '';
-    position: absolute;
-    margin: -0.7em 0 0;
-    -webkit-transition: width 0.7s ease 0.3s;
-    transition: width 0.7s ease 0.3s;
-    -webkit-transform: 0.7s ease 0.3s;
-            transform: 0.7s ease 0.3s;
-  }
-  .hamburger-menu::after {
-    margin-top: 0.7em;
-  }
-  .hamburger-menu {
-    position: relative;
-    display: block;
-    margin: 1.45em 0.35em;
-    -webkit-transition: width 0.3s ease;
-    transition: width 0.3s ease;
-  }
-  .checkbox-trigger:checked {
-    right: 202px;
-  }
-  .checkbox-trigger:checked + .menu-content .hamburger-menu {
-    width: 2em;
-    -webkit-transition: width 0.7s ease 0.7s;
-    transition: width 0.7s ease 0.7s;
-  }
-  .checkbox-trigger:checked + .menu-content .hamburger-menu::before {
-    width: 1.2em;
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
-    margin-top: -0.4em;
-  }
-  .checkbox-trigger:checked + .menu-content .hamburger-menu::after {
-    width: 1.2em;
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg);
-    margin-top: 0.4em;
-  }
-  .checkbox-trigger:checked + .menu-content ul {
-    width: 200px;
-    height: 200px;
-    -webkit-transition: width 0.7s ease 0.3s, height 0.3s ease;
-    transition: width 0.7s ease 0.3s, height 0.3s ease;
   }
   .mainNav ul {
     display: none;

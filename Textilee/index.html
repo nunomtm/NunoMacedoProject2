@@ -18,7 +18,6 @@
 
     <header>
         <div class="wrapper navContainer">
-            <!-- <input class="checkboxTrigger" type="checkbox"/> -->
             <nav class="mainNav">
                 <h1 class="logo animated bounceInDown">Textilee</h1>
                 <ul>
@@ -27,13 +26,22 @@
                     <li><a class="hvr-wobble-vertical" href="blog.html">Blog</a></li>
                     <li><a class="hvr-wobble-vertical" href="contact.html">Contact</a></li>
                 </ul>
-                <!-- <span class="hamburgerMenu"></span> -->
             </nav>
-            <i class="fas fa-bars"></i>
         </div>
         <div class="wrapper">
             <h2 class="headline animated bounceInLeft">Textiles for all projects in mind</h2>
         </div>
+
+        <nav class="mobileNav">
+            <label for="toggleMenu"><i class="fa fa-bars"></i>  </label>
+            <input type="checkbox" id="toggleMenu" name="toggleMenu">
+            <ul class="nav">
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="#main">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main">
