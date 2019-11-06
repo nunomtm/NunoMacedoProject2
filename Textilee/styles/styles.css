@@ -1279,26 +1279,28 @@ main {
     z-index: 10;
     width: 170px;
     right: -170px;
-    top: 8%;
     height: 30%;
+    top: 7%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   ul.nav a {
-    display: inline-block;
     font-family: "Lato", sans-serif;
     font-size: 2.5rem;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    display: inline-block;
     width: 100%;
     padding: 10px;
+    border-bottom: 3px solid transparent;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   ul.nav a:hover,
   ul.nav a:focus {
-    background: #3498db;
+    background: #0CADC0;
+    border-bottom: 3px solid;
   }
   input[type="checkbox"]:checked + ul.nav {
     right: 0;
@@ -1309,12 +1311,12 @@ main {
   label[for="toggleMenu"] {
     position: fixed;
     top: 10px;
-    left: 80%;
-    color: black;
+    left: 90%;
+    color: #1E1713;
     z-index: 10;
   }
   .mobileNav i {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -1330,23 +1332,16 @@ main {
 
 @media (max-width: 480px) {
   header {
-    background-position: 50% 100%;
     min-height: 55vh;
   }
   .headline {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
 }
 
 @media (max-width: 380px) {
   .headline {
     font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .headline {
-    font-size: 2.2rem;
   }
 }
 
@@ -1394,13 +1389,13 @@ main {
     margin-left: 20%;
   }
   .discover .discoverContainer .title {
+    text-align: center;
     margin: 0;
     padding-top: 50%;
-    text-align: center;
   }
   .discover .discoverContainer p {
-    margin: 0;
     text-align: center;
+    margin: 0;
   }
   .discover .discoverContainer img {
     width: 60%;
@@ -1410,13 +1405,13 @@ main {
     margin-left: 38%;
   }
   .newLocations .newLocationsContainer .title {
+    text-align: center;
     margin: 0;
     padding-top: 60%;
-    text-align: center;
   }
   .newLocations .newLocationsContainer p {
-    margin: 0;
     text-align: center;
+    margin: 0;
   }
   .newLocations .newLocationsContainer .button {
     margin-left: 35.5%;
@@ -1491,13 +1486,16 @@ main {
 }
 
 @media (max-width: 480px) {
+  header .title {
+    font-size: 3.8rem;
+  }
   .learn .scissor {
     width: 70%;
     top: -190px;
   }
   .learn .title {
-    width: 100%;
     font-size: 3.2rem;
+    width: 100%;
   }
   .learn figure img {
     top: 2%;
@@ -1523,11 +1521,17 @@ main {
 }
 
 @media (max-width: 415px) {
-  .headline {
-    font-size: 2.8rem;
+  ul.nav {
+    height: 32%;
+  }
+  .learn .title {
+    font-size: 3.1rem;
   }
   .learn .scissor {
     top: -170px;
+  }
+  .learn figure img {
+    left: 15%;
   }
   .learn .button {
     width: 70%;
@@ -1562,18 +1566,59 @@ main {
   .newLocations .newLocationsContainer .button {
     margin-left: 25%;
   }
+  .search {
+    padding: 0;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 375px) {
-  .headline {
+  ul.nav {
+    height: 36%;
+  }
+  header .headline {
     font-size: 3rem;
+  }
+  .learn .title {
+    font-size: 2.8rem;
   }
   .learn .scissor {
     top: -130px;
   }
   .learn .button {
-    width: 76%;
     margin-left: 9%;
+    width: 76%;
+  }
+  .search .button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .learn figure img {
+    max-width: 74%;
+    top: 1%;
+    left: 16%;
+  }
+  .techniques .title {
+    margin-top: 310px;
+  }
+  .posts .knowMore .eventsPost,
+  .posts .knowMore .blogPost,
+  .posts .knowMore .communityPost,
+  .posts .knowMore .inTouchPost {
+    margin-top: -28%;
+    margin-left: 28%;
+  }
+  .newLocations .newLocationsContainer .button {
+    margin-left: 20%;
+  }
+  .search {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .search .title {
+    font-size: 3rem;
   }
   .search .button {
     font-size: 2rem;
@@ -1581,6 +1626,9 @@ main {
 }
 
 @media (max-width: 1023px) {
+  .blogHeader {
+    min-height: 55vh;
+  }
   .blogHeader img {
     width: 58%;
   }
@@ -1601,7 +1649,7 @@ main {
   }
   .newCollection {
     padding-top: 40%;
-    max-width: 85%;
+    max-width: 100%;
   }
   .aside {
     display: none;
@@ -1610,7 +1658,7 @@ main {
     width: 75%;
   }
   .newsletter {
-    max-width: 80%;
+    max-width: 100%;
   }
   .newsletter input[type="text"],
   .newsletter input[type="email"],
@@ -1623,11 +1671,29 @@ main {
   .blogHeader img {
     width: 82.4%;
   }
+  ul.nav {
+    height: 24%;
+  }
 }
 
 @media (max-width: 480px) {
   .blogHeader img {
     width: 80.8%;
+  }
+  .blogHeader .headline {
+    font-size: 4.8rem;
+  }
+  .newCollection {
+    padding-top: 32%;
+  }
+  .newCollection h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .newCollection h3 {
+    font-size: 3rem;
   }
 }
 
@@ -1683,6 +1749,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  ul.nav {
+    height: 32%;
+  }
   .contactHeader {
     min-height: 60vh;
   }
@@ -1701,8 +1770,26 @@ main {
   }
 }
 
+@media (max-width: 480px) {
+  ul.nav {
+    height: 30%;
+  }
+  .contactHeader .headline {
+    font-size: 4.8rem;
+  }
+}
+
+@media (max-width: 415px) {
+  ul.nav {
+    height: 31%;
+  }
+}
+
 @media (max-width: 375px) {
-  .headline {
+  ul.nav {
+    height: 35%;
+  }
+  .contactHeader .headline {
     font-size: 4.5rem;
   }
   .contacts {
@@ -1713,8 +1800,14 @@ main {
 }
 
 @media (max-width: 320px) {
+  ul.nav {
+    height: 42%;
+  }
   main {
     min-height: 80vh;
+  }
+  .getInTouch {
+    height: 85vh;
   }
   .contacts {
     font-size: 1.6rem;
