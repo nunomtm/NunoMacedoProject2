@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +35,9 @@
             <label for="toggleMenu"><i class="fa fa-bars"></i> </label>
             <input type="checkbox" id="toggleMenu" name="toggleMenu">
             <ul class="nav">
-                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#main">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a class="current" href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -78,7 +77,7 @@
             <div class="commentsContainer">
                 <div class="blogComments">
                     <div>
-                        <img src="./textilee-assets/comment-1.jpg" alt="">
+                        <img src="./textilee-assets/comment-1.jpg" alt="photo a blond lady">
                     </div>
                     <blockquote>
                         <p class="postDate">Tuesday December 9th, 2019 by Louise</p>
@@ -88,7 +87,7 @@
             
                 <div class="blogComments">
                     <div>
-                        <img src="./textilee-assets/comment-2.jpg" alt="">
+                        <img src="./textilee-assets/comment-2.jpg" alt="photo of a men wearing a red rat">
                     </div>
                     <blockquote>
                         <p class="postDate">Wednesday December 10th, 2019 by JP</p>
@@ -99,8 +98,11 @@
 
             <form class="newsletter">
                 <div>
-                    <input type="text" placeholder="Name"></input>
-                    <input type="email" placeholder="Email address"></input>
+                    <label class="label" for="name">person name</label>
+                    <input type="text" name="name" placeholder="Name"></input>
+
+                    <label class="label" for="email">email address</label>
+                    <input type="email" name="email" placeholder="Email address"></input>
                 </div>
     
                 <textarea name="comment" rows="5" cols="35">Comment</textarea>

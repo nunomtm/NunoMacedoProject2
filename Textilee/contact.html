@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,10 +34,10 @@
             <label for="toggleMenu"><i class="fa fa-bars"></i> </label>
             <input type="checkbox" id="toggleMenu" name="toggleMenu">
             <ul class="nav">
-                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#main">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="current" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,8 +46,11 @@
         <section class="getInTouch">
             <form class="messageUs">
                 <div>
-                    <input type="text" placeholder="Name"></input>
-                    <input type="email" placeholder="Email address"></input>
+                    <label class="label" for="name">person name</label>
+                    <input type="text" name="name" placeholder="Name"></input>
+
+                    <label class="label" for="email">email address</label>
+                    <input type="email" name="email" placeholder="Email address"></input>
                 </div>
                 
                 <textarea name="comment" rows="5" cols="35">Message</textarea>
