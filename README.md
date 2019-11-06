@@ -3,7 +3,7 @@ Requirements:
 - [] Site is responsive and uses media queries
 - [] Flexbox is used
 - [] Sass variables are used
-[- ] All images considered content have descriptive alt text
+- [] All images considered content have descriptive alt text
 - [] Form is accessible
 - [] Mobile view provides good user experience
 - [] Files, folders & naming conventions followed
@@ -22,6 +22,6 @@ You will also be given a general mark on how well you adhere to best practices m
 You will also be given marks for your project presentation:
 
 - [] Student was loud enough for everyone to hear
-[- ] Student was able to identify a technical win
+- [] Student was able to identify a technical win
 - [] Student was able to effectively identify a technical challenge
 - [] Student did not go over time
