@@ -1,3 +1,6 @@
+<img src="Textilee/textilee-assets/screenshot.png">
+
+
 ## Textilee
 
 Multi-page responsive PSD Conversion website made with Flexbox and SASS!
