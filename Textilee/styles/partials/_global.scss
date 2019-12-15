@@ -108,7 +108,7 @@ li {
 }
 
 /* Skip-line for accessibility */
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
@@ -117,7 +117,7 @@ li {
   color: $tertiaryFontColor;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
 /* - */

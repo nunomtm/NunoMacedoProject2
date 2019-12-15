@@ -344,7 +344,7 @@ li {
 }
 
 /* Skip-line for accessibility */
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
@@ -353,7 +353,7 @@ li {
   color: #1E1713;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
 
@@ -1489,7 +1489,7 @@ main {
   }
   .learn .scissor {
     width: 70%;
-    top: -190px;
+    top: -140px;
   }
   .learn .title {
     font-size: 3.2rem;
@@ -1522,11 +1522,14 @@ main {
   ul.nav {
     height: 32%;
   }
+  .headline {
+    font-size: 3.6rem;
+  }
   .learn .title {
     font-size: 3.1rem;
   }
   .learn .scissor {
-    top: -170px;
+    top: -130px;
   }
   .learn figure img {
     left: 15%;
@@ -1575,7 +1578,7 @@ main {
     height: 36%;
   }
   header .headline {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
   .learn .title {
     font-size: 2.8rem;
@@ -1834,4 +1837,3 @@ footer p {
   text-align: center;
   padding: 10px;
 }
-/*# sourceMappingURL=styles.css.map */
