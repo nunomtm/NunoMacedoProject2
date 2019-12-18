@@ -1,0 +1,35 @@
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/global';
+@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/blog';
+@import 'partials/contact';
+@import 'partials/responsive';
+
+
+// To hide the labels
+.label:not(:focus):not(:active) { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+
+// Footer Styles Start Here
+
+footer {
+    background-color: $footerBackgroundColor;
+    p {
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+// Footer Styles Start Here
