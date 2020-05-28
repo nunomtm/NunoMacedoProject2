@@ -1,4 +1,4 @@
-<img src="Textilee/textilee-assets/screenshot.png">
+<img src="textilee-assets/screenshot.png">
 
 
 ## Textilee
