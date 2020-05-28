@@ -1,4 +1,12 @@
 // Header Responsive Starts Here
+@include mqLaptopHD {
+    .discover {
+        .discoverContainer {
+            margin-bottom: 0;
+        }
+    }
+}
+
 @include mqTablet {
     header {
         background-position: 45% 100%;

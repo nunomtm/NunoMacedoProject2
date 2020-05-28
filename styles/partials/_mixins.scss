@@ -1,3 +1,9 @@
+@mixin mqLaptopHD {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
 @mixin mqDesktop {
     @media (max-width: 1023px) {
         @content;

@@ -363,6 +363,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 95vh;
+  border: 1px solid red;
 }
 
 .navContainer {
@@ -698,6 +699,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-bottom: 132px;
 }
 
 .discover .discoverContainer .title,
@@ -1255,6 +1257,12 @@ main {
 
 .contactUs p {
   color: #1E1713;
+}
+
+@media (max-width: 1440px) {
+  .discover .discoverContainer {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1837,3 +1845,4 @@ footer p {
   text-align: center;
   padding: 10px;
 }
+/*# sourceMappingURL=styles.css.map */
